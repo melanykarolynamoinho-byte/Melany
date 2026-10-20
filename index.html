@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio da Melany Karolyna</title>
+
+    <!-- Ícones online Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/body-p.css">
+    <link rel="stylesheet" href="css/header-p.css">
+    <link rel="stylesheet" href="css/reset-p.css">
+</head>
+
+<body>
+
+    <header class="header-portfolio">
+        <h1>Portfólio Digital</h1>
+
+        <nav class="nav-container">
+            <a href="#sobre" title="Sobre Mim">
+                <i class="fa-solid fa-user"></i>
+            </a>
+
+            <a href="#projetos" title="Projetos">
+                <i class="fa-solid fa-folder-open"></i>
+            </a>
+
+            <a href="#habilidades" title="Habilidades">
+                <i class="fa-solid fa-laptop-code"></i>
+            </a>
+
+            <a href="memorias.html" title="Memórias">
+                <i class="fa-solid fa-camera-retro"></i>
+            </a>
+
+            <a href="#contato" title="Contato">
+                <i class="fa-solid fa-envelope"></i>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <div class="hero-texto">
+                <h1>Olá, eu sou <span>Melany Karolyna</span></h1>
+
+                <p>
+                    Sou estudante do Ensino Médio, curso Gestão Administrativa e Ferramentas Digitais.
+                    Este é o meu portfólio e aqui mostrarei minha jornada na informática,
+                    incluindo projetos, atividades e meu aprendizado durante o ano de 2026.
+                </p>
+
+                <a href="#projetos" class="botao">Ver Projetos</a>
+            </div>
+
+            <div class="hero-foto">
+                <img src="img/melany.jpeg" alt="Foto da aluna Melany">
+            </div>
+        </section>
+
+        <section id="sobre" class="card sobre">
+            <h2>Sobre mim</h2>
+
+            <p>
+                Tenho 16 anos e, desde a infância, desenvolvo grande interesse pela área de computação.
+                Atualmente, curso informática com o objetivo de aprimorar minhas habilidades técnicas
+                e me preparar de forma consistente para o mercado de trabalho.
+                <br><br>
+                Acredito que meu principal diferencial seja o comprometimento com os estudos.
+                No futuro, pretendo graduar-me em Biomedicina e atuar na perícia criminal.
+            </p>
+        </section>
+
+        <section id="apresentacao" class="card apresentacao">
+            <h2>Meu Vídeo</h2>
+
+            <p>Assista a este pequeno vídeo para conhecer mais sobre mim.</p>
+
+            <video controls class="video-portfolio">
+                <source src="video/melany.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução de vídeo.
+            </video>
+        </section>
+
+        <section id="projetos" class="card">
+            <h2>Meus Projetos</h2>
+
+            <div class="projetos">
+
+                <div class="projeto">
+                    <i class="fa-solid fa-code icone-projeto"></i>
+                    <h3>Site em HTML e CSS</h3>
+                    <p>Criação de uma página simples e organizada usando HTML5 e CSS3.</p>
+                </div>
+
+                <div class="projeto">
+                    <i class="fa-solid fa-file-powerpoint icone-projeto"></i>
+                    <h3>Apresentação no PowerPoint</h3>
+                    <p>Montagem de slides com imagens, vídeos, transições e hyperlinks.</p>
+                </div>
+
+                <div class="projeto">
+                    <i class="fa-solid fa-computer icone-projeto"></i>
+                    <h3>Informática Básica</h3>
+                    <p>Práticas com digitação, pastas, arquivos e uso correto do computador.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="habilidades" class="card habilidades">
+            <h2>Habilidades</h2>
+
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>PowerPoint</li>
+                <li>Organização</li>
+                <li>Internet</li>
+                <li>Digitação</li>
+            </ul>
+        </section>
+
+        <section id="contato" class="card contato">
+            <h2>Contato</h2>
+
+            <div class="redes">
+                <a href="https://www.instagram.com/k.lyna01/" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://wa.link/hsvfby" target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+
+                <a href="#" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+ <button id="topo" onclick="voltarTopo()" title="Voltar ao Topo">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+    <footer>
+        <p>&copy; 2026 - Portfólio Melany Karolyna</p>
+    </footer>
+
+    <script>// Função para voltar ao topo da página
+function voltarTopo() {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+// Mostrar ou esconder o botão de voltar ao topo
+window.addEventListener("scroll", function () {
+    const botaoTopo = document.getElementById("topo");
+
+    if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+        botaoTopo.style.display = "block";
+    } else {
+        botaoTopo.style.display = "none";
+    }
+});</script>
+
+</body>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+
+</html>

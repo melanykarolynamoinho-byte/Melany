@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Álbum de Fotos Offline</title>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <h1 class="titulo-album">Minha galeria, meus Amores</h1>
+    <div class="subtitulo-album">Cada foto, uma lembrança.</div>
+
+    <div class="album-container">
+        
+        <div class="foto-box" onclick="abrirModal('img/foto1.jpeg', '🎀')">
+            <img src="img/foto1.jpeg" alt="Foto 1">
+            <div class="legenda">Amora</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto2.jpeg', '🧜🏻‍♀️')">
+            <img src="img/foto2.jpeg" alt="Foto 2">
+            <div class="legenda">Merliah</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto3.jpeg', '🍿')">
+            <img src="img/foto3.jpeg" alt="Foto 3">
+            <div class="legenda">Pipoca</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto4.jpeg', '🎀')">
+            <img src="img/foto4.jpeg" alt="Foto 4">
+            <div class="legenda">Morinha</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto5.jpeg', '🧜🏻‍♀️')">
+            <img src="img/foto5.jpeg" alt="Foto 5">
+            <div class="legenda">Memezinha</div>
+        </div>
+
+        <div class="foto-box" onclick="abrirModal('img/foto6.jpeg', '🍿')">
+            <img src="img/foto6.jpeg" alt="Foto 6">
+            <div class="legenda">Popoca</div>
+        </div>
+
+    </div>
+
+<audio controls autoplay loop class= "musica-fundo">
+    <source src="audio/taylor.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+<div class="container-botão-voltar">
+    <a href="index.html" class="botao-voltar">
+        <i class="fa-solid fa-arrow-left"></i> Voltar
+    </a>
+</div>
+
+    <div class="modal" id="meuModal">
+        <span class="btn-fechar" onclick="fecharModal()">&times;</span>
+        <img id="imagemModal" src="" alt="Foto em tela cheia">
+        <div class="legenda-modal" id="textoModal"></div>
+    </div>
+
+</body>
+
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+
+<script>
+  new window.VLibras.Widget(
+    'https://vlibras.gov.br/app',
+    'https://vlibras.gov.br/config/default_logo.json',
+    'random',
+    'R'
+  );
+</script>
+
+</html>
